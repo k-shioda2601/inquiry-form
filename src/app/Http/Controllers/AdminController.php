@@ -10,7 +10,7 @@ class AdminController extends Controller
     public function index()
     {
         $contacts = Contact::paginate(7);
-        return view('admin', compact('contacts'));
+        return view('admin.index', compact('contacts'));
     }
 
     public function search(Request $request)
@@ -40,7 +40,7 @@ class AdminController extends Controller
         }
 
         $contacts = $query->paginate(7);
-        return view('admin', compact('contacts'));
+        return view('admin.index', compact('contacts'));
     }
 
     public function reset()

@@ -9,13 +9,13 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return view('contact.index');
     }
 
     public function confirm(Request $request)
     {
         $contact = $request->all();
-        return view('confirm', compact('contact'));
+        return view('contact.confirm', compact('contact'));
     }
 
     public function store(Request $request)
@@ -38,6 +38,6 @@ class ContactController extends Controller
 
     public function thanks()
     {
-        return view('thanks');
+        return view('contact.thanks');
     }
 }
