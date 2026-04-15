@@ -1,0 +1,142 @@
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact__heading {
+    text-align: center;
+    font-size: 24px;
+    font-family: serif;
+    font-weight: normal;
+    color: #998a7a;
+    margin-bottom: 40px;
+}
+
+.contact__form {
+    width: 100%;
+}
+
+.contact__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+.contact__row--textarea {
+    align-items: flex-start;
+}
+
+.contact__row--textarea .contact__label {
+    padding-top: 8px;
+}
+
+.contact__label {
+    width: 200px;
+    font-size: 14px;
+    color: #998a7a;
+    flex-shrink: 0;
+}
+
+.contact__required {
+    color: #e55;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.contact__input-group {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.contact__input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+
+.contact__input::placeholder,
+.contact__select,
+.contact__textarea::placeholder {
+    color: #bbb;
+}
+
+.contact__input--wide {
+    width: 100%;
+}
+
+.contact__input--tel {
+    max-width: 150px;
+    text-align: center;
+}
+
+.contact__input-group--tel {
+    gap: 5px;
+}
+
+.contact__tel-separator {
+    color: #333;
+    font-size: 14px;
+}
+
+.contact__radio {
+    font-size: 14px;
+    color: #998a7a;
+    margin-right: 20px;
+    cursor: pointer;
+    accent-color: #998a7a;
+}
+
+.contact__select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #999;
+    min-width: 200px;
+}
+
+.contact__textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    resize: vertical;
+}
+
+.contact__error {
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.contact__error span {
+    color: #e00;
+    font-size: 12px;
+}
+
+.contact__button-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact__button {
+    padding: 12px 50px;
+    background-color: #998a7a;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.contact__button:hover {
+    opacity: 0.8;
+}
