@@ -16,10 +16,11 @@
 .confirm__table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid #ddd;
 }
 
 .confirm__row {
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 .confirm__label {

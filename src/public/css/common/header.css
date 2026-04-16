@@ -17,16 +17,16 @@
 
 .header__nav {
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .header__nav-button {
     padding: 6px 16px;
-    border: 1px solid #998a7a;
+    border: 1px solid #ccc;
     background-color: transparent;
-    color: #998a7a;
+    color: #ccc;
     font-size: 12px;
     cursor: pointer;
     text-decoration: none;

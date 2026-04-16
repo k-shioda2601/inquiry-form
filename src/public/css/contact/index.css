@@ -62,7 +62,6 @@
 }
 
 .contact__input::placeholder,
-.contact__select,
 .contact__textarea::placeholder {
     color: #bbb;
 }
@@ -98,8 +97,12 @@
     border: 1px solid #ddd;
     font-size: 14px;
     background-color: #f9f9f9;
-    color: #999;
+    color: #bbb;
     min-width: 200px;
+}
+
+.contact__select--selected {
+    color: #333;
 }
 
 .contact__textarea {
