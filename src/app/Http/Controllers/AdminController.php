@@ -21,13 +21,9 @@ class AdminController extends Controller
 
         if ($request->filled('name')) {
             $query->where(function ($q) use ($request) {
-                $q->where('first_name', 'like', '%' . $request->name . '%')
-                    ->orWhere('last_name', 'like', '%' . $request->name . '%');
+                $q->whereRaw("CONCAT(last_name, first_name) LIKE ?", ['%' . $request->name . '%'])
+                    ->orWhere('email', 'like', '%' . $request->name . '%');
             });
-        }
-
-        if ($request->filled('email')) {
-            $query->where('email', 'like', '%' . $request->email . '%');
         }
 
         if ($request->filled('gender')) {
