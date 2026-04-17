@@ -1,0 +1,39 @@
+@startuml ER
+
+entity "users" {
+    * id : bigint unsigned <<PK>>
+    --
+    * name : varchar(255)
+    * email : varchar(255)
+    * password : varchar(255)
+    created_at : timestamp
+    updated_at : timestamp
+}
+
+entity "categories" {
+    * id : bigint unsigned <<PK>>
+    --
+    * content : varchar(255)
+    created_at : timestamp
+    updated_at : timestamp
+}
+
+entity "contacts" {
+    * id : bigint unsigned <<PK>>
+    --
+    * category_id : bigint unsigned <<FK>>
+    * first_name : varchar(255)
+    * last_name : varchar(255)
+    * gender : tinyint
+    * email : varchar(255)
+    * tel : varchar(255)
+    * address : varchar(255)
+    building : varchar(255)
+    * detail : text
+    created_at : timestamp
+    updated_at : timestamp
+}
+
+categories ||--o{ contacts
+
+@enduml
