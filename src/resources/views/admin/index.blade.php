@@ -38,7 +38,7 @@
 
     <div class="admin__toolbar">
         <div class="admin__actions">
-            <a class="admin__export-button" href="/export">エクスポート</a>
+            <a class="admin__export-button" href="/export?{{ http_build_query(request()->query()) }}">エクスポート</a>
         </div>
         <div class="admin__pagination">
             {{ $contacts->appends(request()->query())->links() }}
