@@ -1,0 +1,275 @@
+.admin {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin__heading {
+    text-align: center;
+    font-size: 24px;
+    font-family: serif;
+    font-weight: normal;
+    color: #998a7a;
+    margin-bottom: 20px;
+}
+
+.admin__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.admin__search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+}
+
+.admin__search-input::placeholder {
+    color: #bbb;
+}
+
+.admin__search-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    color: #999;
+}
+
+.admin__search-date {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    color: #999;
+}
+
+.admin__search-button {
+    padding: 8px 20px;
+    background-color: #998a7a;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.admin__search-button:hover {
+    opacity: 0.8;
+}
+
+.admin__reset-button {
+    padding: 8px 20px;
+    background-color: #c5b9a8;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin__reset-button:hover {
+    opacity: 0.8;
+}
+
+.admin__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.admin__actions {
+}
+
+.admin__export-button {
+    padding: 8px 16px;
+    border: 1px solid #998a7a;
+    background-color: transparent;
+    color: #998a7a;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin__export-button:hover {
+    opacity: 0.8;
+}
+
+.admin__pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination__link {
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.pagination__link--active {
+    padding: 4px 10px;
+    border: 1px solid #998a7a;
+    background-color: #998a7a;
+    color: #fff;
+    font-size: 13px;
+}
+
+.pagination__arrow {
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.pagination__arrow--disabled {
+    color: #ccc;
+}
+
+.pagination__dots {
+    font-size: 13px;
+    color: #333;
+}
+
+.admin__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin__table-header {
+    background-color: #998a7a;
+    color: #fff;
+}
+
+.admin__table-th {
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.admin__table-row:hover {
+    background-color: #f5f0eb;
+}
+
+.admin__table-td {
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin__detail-button {
+    padding: 5px 15px;
+    border: 1px solid #998a7a;
+    background-color: transparent;
+    color: #998a7a;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.admin__detail-button:hover {
+    opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.modal--active {
+    display: block;
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 101;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal__close:hover {
+    opacity: 0.6;
+}
+
+.modal__table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal__label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px 10px 0;
+    width: 160px;
+    vertical-align: top;
+}
+
+.modal__value {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+}
+
+.modal__delete-form {
+    text-align: center;
+}
+
+.modal__delete-button {
+    padding: 10px 40px;
+    background-color: #e55;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal__delete-button:hover {
+    opacity: 0.8;
+}

@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Category;
 
 class AdminController extends Controller
 {
     public function index()
     {
         $contacts = Contact::paginate(7);
-        return view('admin.index', compact('contacts'));
+        $categories = Category::all();
+        return view('admin.index', compact('contacts', 'categories'));
     }
 
     public function search(Request $request)
@@ -40,7 +42,8 @@ class AdminController extends Controller
         }
 
         $contacts = $query->paginate(7);
-        return view('admin.index', compact('contacts'));
+        $categories = Category::all();
+        return view('admin.index', compact('contacts', 'categories'));
     }
 
     public function reset()
