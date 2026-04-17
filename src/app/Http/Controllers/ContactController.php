@@ -15,7 +15,7 @@ class ContactController extends Controller
         return view('contact.index', compact('categories'));
     }
 
-    public function confirm(Request $request)
+    public function confirm(ContactRequest $request)
     {
         $contact = $request->all();
         $category = Category::find($contact['category_id']);
