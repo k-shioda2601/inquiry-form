@@ -50,7 +50,7 @@
                     メールアドレス<span class="contact__required">※</span>
                 </label>
                 <div class="contact__input-group">
-                    <input class="contact__input contact__input--wide" type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
+                    <input class="contact__input contact__input--wide" type="text" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
                 </div>
             </div>
             <div class="contact__error">

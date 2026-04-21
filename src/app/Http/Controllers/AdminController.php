@@ -26,7 +26,7 @@ class AdminController extends Controller
             });
         }
 
-        if ($request->filled('gender')) {
+        if ($request->filled('gender') && $request->gender !== 'all') {
             $query->where('gender', $request->gender);
         }
         if ($request->filled('category_id')) {
@@ -64,7 +64,7 @@ class AdminController extends Controller
             });
         }
 
-        if ($request->filled('gender')) {
+        if ($request->filled('gender') && $request->gender !== 'all') {
             $query->where('gender', $request->gender);
         }
 

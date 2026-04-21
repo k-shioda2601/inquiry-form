@@ -20,7 +20,7 @@
 
             <div class="login__group">
                 <label class="login__label">メールアドレス</label>
-                <input class="login__input" type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
+                <input class="login__input" type="text" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
             </div>
             <div class="login__error">
                 @error('email') <span>{{ $message }}</span> @enderror

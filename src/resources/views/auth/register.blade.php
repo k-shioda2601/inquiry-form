@@ -28,7 +28,7 @@
 
             <div class="register__group">
                 <label class="register__label">メールアドレス</label>
-                <input class="register__input" type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
+                <input class="register__input" type="text" name="email" placeholder="例: test@example.com" value="{{ old('email') }}">
             </div>
             <div class="register__error">
                 @error('email') <span>{{ $message }}</span> @enderror

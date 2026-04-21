@@ -21,6 +21,7 @@
         <input class="admin__search-input" type="text" name="name" placeholder="名前やメールアドレスを入力してください" value="{{ request('name') }}">
         <select class="admin__search-select" name="gender">
             <option value="">性別</option>
+            <option value="all" {{ request('gender') == 'all' ? 'selected' : '' }}>全て</option>
             <option value="1" {{ request('gender') == '1' ? 'selected' : '' }}>男性</option>
             <option value="2" {{ request('gender') == '2' ? 'selected' : '' }}>女性</option>
             <option value="3" {{ request('gender') == '3' ? 'selected' : '' }}>その他</option>
